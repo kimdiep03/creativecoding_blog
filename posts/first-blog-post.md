@@ -21,10 +21,10 @@ disable_html_sanitization: true
 <p>I laid all the rectangles into places first for the layout. Then, to fill gradient color in later. But, what I thought was wrong. Creating gradient blocks in this was harder than I thought...</p>
 
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.01.42 PM.png" alt="pic3">
-<p>Then I was playing around map() for a while, and still trying to figure out how to do gradient</p>
+<p>Then I was playing around map function for a while, and still trying to figure out how to do gradient</p>
 
-<img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.01.42 PM.png" alt="pic3">
-<p>Then I was playing around map() for a while, and still trying to figure out how to do gradient</p>
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.34.45 PM.png" alt="pic4">
+<p>Then, I found a tutorial that uses lerpColor function and map function to do gradient that I can mostly understand</p>
 
 ## HW2
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="400px" height = "442px"></iframe>
