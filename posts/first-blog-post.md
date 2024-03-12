@@ -56,8 +56,11 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.42 PM.png" alt="pic11">
 <p>At first, I tried to understand for loop and line. Line has 4 arguments: x, y, start point and end point. i++ means i = x + 1, and it will keep adding up while running for loop. I was trying to figure out how to make them straight</p>
 
-<img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.42 PM.png" alt="pic12">
-<p>At first, I tried to understand for loop and line. Line has 4 arguments: x, y, start point and end point. i++ means i = x + 1, and it will keep adding up while running for loop. I was trying to figure out how to make them straight</p>
+<img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.16 PM.png" alt="pic12">
+<p>After making the horizontal lines straight, I duplicated and switch numbers to create vertical lines. *: spacing, +: offset.</p>
+
+<img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.16 PM.png" alt="pic13">
+<p>After making the horizontal lines straight, I duplicated and switch numbers to create vertical lines. *: spacing, +: offset.</p>
 
 **Notes**
 <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.42 PM.png" alt="pic8">
