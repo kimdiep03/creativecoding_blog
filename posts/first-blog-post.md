@@ -15,6 +15,8 @@ disable_html_sanitization: true
 <p>I wanted to copy this (https://www.nearnext.com/) work from Rafaël Rozendaa. But, I failed to do the gradient animation because I cannot figure out how to do that.</p>
 
 **Process**
+<br> 
+<br>
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png" alt="pic1">
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 3.59.00 PM.png" alt="pic2">
 
