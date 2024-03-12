@@ -16,7 +16,7 @@ disable_html_sanitization: true
 
 **Process**
 <br>
-(/240306_first_post/Screenshot 2024-03-06 at 11.50.44 AM)
+(/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png)
 
 ## HW2
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="400px" height = "442px"></iframe>
