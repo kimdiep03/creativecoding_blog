@@ -15,6 +15,7 @@ disable_html_sanitization: true
 <p>I wanted to copy this (https://www.nearnext.com/) work from Rafaël Rozendaa. But, I failed to do the gradient animation because I cannot figure out how to do that.</p>
 
 **Process**
+<br>
 (/240306_first_post/Screenshot 2024-03-06 at 11.50.44 AM)
 
 ## HW2
