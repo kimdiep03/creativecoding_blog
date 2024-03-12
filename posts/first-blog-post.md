@@ -53,5 +53,5 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 **Process**
 <br>
 <br>
-<img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.13.36 PM.png" alt="pic8">
-<p>But, I also failed to do that =).</p>
+<img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.42 PM.png" alt="pic8">
+<p>At first, I tried to understand for loop and line. Line has 4 arguments: x, y, start point and end point. i++ means i = x + 1, and it will keep adding up while running for loop.</p>
