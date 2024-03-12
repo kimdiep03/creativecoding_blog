@@ -5,13 +5,11 @@ snippet: My first blog!
 disable_html_sanitization: true
 ---
 
-Hello, world!
-
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/4xTclF0v2" width ="100%"></iframe>
 
-![a small group of people creative coding] (/240306_first_post/Screenshot 2024-03-06 at 11.50.44 AM)
+![First week!] (/240306_first_post/Screenshot 2024-03-06 at 11.50.44 AM)
 
-# This is h1
+# Homework
 
 ## This is h2
 
