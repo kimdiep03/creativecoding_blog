@@ -16,9 +16,8 @@ disable_html_sanitization: true
 
 **Process**
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png" alt="pic1">
-<img src="/static/240306_first_post/Screenshot 2024-03-12 at 3.59.00 PM.png">
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 3.59.00 PM.png" alt="pic2">
 
-(/static/240306_first_post/Screenshot 2024-03-12 at 3.59.00 PM.png)
 <p>I laid all the rectangles into places first for the layout. Then, to fill gradient color in later. But, what I thought was wrong. Creating gradient blocks in this was harder than I thought...</p>
 
 ## HW2
