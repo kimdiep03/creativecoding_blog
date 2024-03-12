@@ -62,5 +62,9 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.31.22 PM.png" alt="pic13">
 
 **Notes**
-<img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.42 PM.png" alt="pic8">
+<br>
+<img src="/static/240306_first_post/IMG_5145.jpg" alt="pic14">
+<img src="/static/240306_first_post/IMG_5146.jpg" alt="pic15">
+
+
 
