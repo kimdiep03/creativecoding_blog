@@ -24,7 +24,7 @@ disable_html_sanitization: true
 <p>Then I was playing around map function for a while, and still trying to figure out how to do gradient.</p>
 
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.34.45 PM.png" alt="pic4">
-<p>Then, I found a tutorial that uses lerpColor function and map function to do gradient that I can mostly understand.</p>
+<p>Then, I found a tutorial that uses _lerpColor function_ and map function to do gradient that I can mostly understand.</p>
 
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.01.54 PM.png" alt="pic5">
 <p>I can created gradient but struggled to place the gradient into blocks and move the as shapes. As I understand, it was because the gradient was drawn by lines using loops.</p>
@@ -32,8 +32,11 @@ disable_html_sanitization: true
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.08.56 PM.png" alt="pic6">
 <p>I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.</p>
 
-<img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.08.56 PM.png" alt="pic6">
-<p>I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.</p>
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.45.52 PM.png" alt="pic7">
+<p>Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later. But, I failed to do that and I did not most parts in the block.js.</p>
+
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.45.52 PM.png" alt="pic7">
+<p>Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later. But, I failed to do that and I did not most parts in the block.js.</p>
 
 ## HW2
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="400px" height = "442px"></iframe>
