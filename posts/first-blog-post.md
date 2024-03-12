@@ -49,6 +49,9 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 
 ## HW2
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="400px" height = "442px"></iframe>
+<br>
 **Process**
+<br>
+<br>
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.13.36 PM.png" alt="pic8">
 <p>But, I also failed to do that =).</p>
