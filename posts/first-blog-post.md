@@ -59,8 +59,7 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.16 PM.png" alt="pic12">
 <p>After making the horizontal lines straight, I duplicated and switch numbers to create vertical lines. *: spacing, +: offset.</p>
 
-<img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.16 PM.png" alt="pic13">
-<p>After making the horizontal lines straight, I duplicated and switch numbers to create vertical lines. *: spacing, +: offset.</p>
+<img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.31.22 PM.png" alt="pic13">
 
 **Notes**
 <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.42 PM.png" alt="pic8">
