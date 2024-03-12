@@ -26,7 +26,7 @@ disable_html_sanitization: true
 <p>Then I was playing around map function for a while, and still trying to figure out how to do gradient.</p>
 
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.34.45 PM.png" alt="pic4">
-<p>Then, I found a tutorial that uses _lerpColor function_ and map function to do gradient that I can mostly understand.</p>
+<p>Then, I found a tutorial that uses lerpColor function and map function to do gradient that I can mostly understand.</p>
 
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.01.54 PM.png" alt="pic5">
 <p>I can created gradient but struggled to place the gradient into blocks and move the as shapes. As I understand, it was because the gradient was drawn by lines using loops.</p>
@@ -49,8 +49,6 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 
 ## HW2
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="400px" height = "442px"></iframe>
-
-
-_underline_
-
-**bold**
+**Process**
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.13.36 PM.png" alt="pic8">
+<p>But, I also failed to do that =).</p>
