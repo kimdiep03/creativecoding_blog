@@ -33,10 +33,13 @@ disable_html_sanitization: true
 <p>I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.</p>
 
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.45.52 PM.png" alt="pic7">
-<p>Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later. But, I failed to do that and I did not most parts in the block.js.</p>
+<p>Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later...</p>
 
-<img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.45.52 PM.png" alt="pic7">
-<p>Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later. But, I failed to do that and I did not most parts in the block.js.</p>
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.13.36 PM.png" alt="pic8">
+<p>But, I also failed to do that =).</p>
+
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.13.36 PM.png" alt="pic8">
+<p>But, I also failed to do that =).</p>
 
 ## HW2
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="400px" height = "442px"></iframe>
