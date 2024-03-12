@@ -23,6 +23,9 @@ disable_html_sanitization: true
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.01.42 PM.png" alt="pic3">
 <p>Then I was playing around map() for a while, and still trying to figure out how to do gradient</p>
 
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.01.42 PM.png" alt="pic3">
+<p>Then I was playing around map() for a while, and still trying to figure out how to do gradient</p>
+
 ## HW2
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="400px" height = "442px"></iframe>
 
