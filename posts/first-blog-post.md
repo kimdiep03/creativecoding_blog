@@ -29,8 +29,11 @@ disable_html_sanitization: true
 <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.01.54 PM.png" alt="pic5">
 <p>I can created gradient but struggled to place the gradient into blocks and move the as shapes. As I understand, it was because the gradient was drawn by lines using loops.</p>
 
-<img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.01.54 PM.png" alt="pic5">
-<p>I can created gradient but struggled to place the gradient into blocks and move the as shapes. As I understand, it was because the gradient was drawn by lines using loops.</p>
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.08.56 PM.png" alt="pic6">
+<p>I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.</p>
+
+<img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.08.56 PM.png" alt="pic6">
+<p>I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.</p>
 
 ## HW2
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="400px" height = "442px"></iframe>
