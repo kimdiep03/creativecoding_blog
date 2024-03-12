@@ -12,11 +12,11 @@ disable_html_sanitization: true
 # Homework
 
 ## HW1
-<iframe src="https://editor.p5js.org/kimnhudiep2003/full/AEnURm_oi" width ="100%"></iframe>
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/AEnURm_oi" width ="500px" height = "441px"></iframe>
 
 
 ## HW2
-<iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="100%"></iframe>
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/lWW5WM39P" width ="400px" height = "442px"></iframe>
 
 
 _underline_
