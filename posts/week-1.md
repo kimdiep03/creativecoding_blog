@@ -1,7 +1,7 @@
 ---
 title: First Session
 published_at: 2024-03-06
-snippet: My first blog!
+snippet: My first blog
 disable_html_sanitization: true
 ---
 
