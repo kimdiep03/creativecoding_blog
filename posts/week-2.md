@@ -11,5 +11,5 @@ disable_html_sanitization: true
 # Homework
 
 ## HW1
-<iframe src="https://editor.p5js.org/kimnhudiep2003/full/AEnURm_oi" width ="500px" height = "442px"></iframe>
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/wbuM03pbN" width ="100%" height = "100%"></iframe>
 <p>I wanted to copy this (https://www.nearnext.com/) work from Rafaël Rozendaa. But, I failed to do the gradient animation because I cannot figure out how to do that.</p>
