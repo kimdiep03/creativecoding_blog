@@ -1,5 +1,5 @@
 ---
-title: First Session
+title: Second Session
 published_at: 2024-03-15
 snippet: My second blog
 disable_html_sanitization: true
