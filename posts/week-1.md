@@ -26,7 +26,8 @@ disable_html_sanitization: true
 <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png" alt="pic1">
 </div>
-![process3] (/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png)
+
+![process3](/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png)
 
 <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 3.59.00 PM.png" alt="pic2">
@@ -106,6 +107,7 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 <br>
 <div align="center">
   <img src="/static/240306_first_post/IMG_5145.jpg" alt="pic14">
+  ![process3](/240306_first_post/IMG_5145.jpg)
   <img src="/static/240306_first_post/IMG_5146.jpg" alt="pic15">
 </div>
 
