@@ -109,6 +109,7 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 <!--   <img src="/static/240306_first_post/IMG_5145.jpg" alt="pic14"> -->
   ![process3](/240306_first_post/IMG_5145.jpg)
   <img src="/static/240306_first_post/IMG_5146.jpg" alt="pic15">
+  ![process3](/240306_first_post/IMG_5146.jpg)
 
 
 
