@@ -4,9 +4,10 @@ published_at: 2024-03-06
 snippet: My first blog
 disable_html_sanitization: true
 ---
-
+<div align="center">
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/4xTclF0v2" width ="100%" height = "242px"></iframe>
 <p>Here is what I learned in the first session!</p>
+</div>
 
 # Homework
 
