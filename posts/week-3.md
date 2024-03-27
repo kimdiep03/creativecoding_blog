@@ -8,7 +8,7 @@ disable_html_sanitization: true
 <div align="center">
     <iframe src="https://editor.p5js.org/kimnhudiep2003/full/dOCKXt7-E" width = "400px" height = "442px"></iframe>
 
-    <p>Here is what I learned to create pixel grid from two for loops</p>
+    Here is what I learned to create pixel grid from two for loops
 </div>
 
 <br> 
