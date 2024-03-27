@@ -34,30 +34,35 @@ disable_html_sanitization: true
 
 ![process](/240306_first_post/img7.png)
 
-<p>I laid out all the rectangles into places first for the layout. Then, to fill gradient color in later. But, what I thought was wrong. Creating gradient blocks in this was harder than I thought...</p>
+<p>1. I laid out all the rectangles into places first for the layout. Then, to fill gradient color in later. But, what I thought was wrong. Creating gradient blocks in this was harder than I thought...</p>
+
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.01.42 PM.png" alt="pic3">
 </div>  -->
 ![process](/240306_first_post/img8.png)
 
-<p>Then I was playing around map function for a while, and still trying to figure out how to do gradient.</p>
+<p>2. Then I was playing around map function for a while, and still trying to figure out how to do gradient.</p>
 
-<div align="center">
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.34.45 PM.png" alt="pic4">
-</div>
-<p>Then, I found a tutorial that uses lerpColor function and map function to do gradient that I can mostly understand.</p>
-</div>
+</div> -->
+![process](/240306_first_post/img9.png)
 
-<div align="center">
+<p>3. Then, I found a tutorial that uses lerpColor function and map function to do gradient that I can mostly understand.</p>
+
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.01.54 PM.png" alt="pic5">
-</div>
-<p>I can created gradient but struggled to place the gradient into blocks and move the as shapes. As I understand, it was because the gradient was drawn by lines using loops.</p>
+</div> -->
+![process](/240306_first_post/img10.png)
 
-<div align="center">
+<p>4. I can created gradient but struggled to place the gradient into blocks and move the as shapes. As I understand, it was because the gradient was drawn by lines using loops.</p>
+
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.08.56 PM.png" alt="pic6">
-</div>
-<p>I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.</p>
+</div> -->
+
+<p>5. I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.</p>
 
 <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.45.52 PM.png" alt="pic7">
@@ -96,17 +101,14 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 </div>
 <p>At first, I tried to understand for loop and line. Line has 4 arguments: x, y, start point and end point. i++ means i = x + 1, and it will keep adding up while running for loop. I was trying to figure out how to make them straight</p>
 
-<div align="center">
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.16 PM.png" alt="pic12">
-</div>
+</div> -->
+  ![process](/240306_first_post/img4.png)
 
 <p>After making the horizontal lines straight, I duplicated and switch numbers to create vertical lines. *: spacing, +: offset.</p>
 
-<div align="center">
-  <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.31.22 PM.png" alt="pic13">
-</div>
-
-  ![process3](/240306_first_post/IMG_5146.jpg)
+  ![process3](/240306_first_post/img5.png)
 
 **Notes**
 <br>
