@@ -10,3 +10,5 @@ disable_html_sanitization: true
 <br>
 
 # Homework
+## HW1
+In your own words, and using examples from the internet, draw on the readings from this week to define what "cute" is, as an aesthetic category.  Post your discussion to your blog.
