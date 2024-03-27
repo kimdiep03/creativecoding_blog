@@ -26,13 +26,13 @@ disable_html_sanitization: true
 <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png" alt="pic1">
 </div>
-![process4](/240306_first_post/img6.png)
+![process](/240306_first_post/img6.png)
 
 <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 3.59.00 PM.png" alt="pic2">
 </div>
 
-<p>I laid all the rectangles into places first for the layout. Then, to fill gradient color in later. But, what I thought was wrong. Creating gradient blocks in this was harder than I thought...</p>
+<p>I laid out all the rectangles into places first for the layout. Then, to fill gradient color in later. But, what I thought was wrong. Creating gradient blocks in this was harder than I thought...</p>
 
 <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.01.42 PM.png" alt="pic3">
