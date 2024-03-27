@@ -64,23 +64,31 @@ disable_html_sanitization: true
 
 <p>5. I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.</p>
 
-<div align="center">
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.45.52 PM.png" alt="pic7">
-</div>
+</div> -->
+![process](/240306_first_post/img11.png)
+
 <p>Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later...</p>
 
-<div align="center">
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.13.36 PM.png" alt="pic8">
-</div>
+</div> -->
+![process](/240306_first_post/img12.png)
+
 
 <p>But, I also failed to do that =).</p>
 
-<div align="center">
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.43.54 PM.png" alt="pic9">
-</div>
-<div align="center">
+</div> -->
+![process](/240306_first_post/img13.png)
+
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.43.54 PM.png" alt="pic10">
-</div>
+</div> -->
+![process](/240306_first_post/img14.png)
+
 <p>Then I duplicated more gradients and tried to draw them from this point to another point on the canvas, and it seemed to be fine. And I worked on that but haven't really figured out how to animate the gradient yet. 
 
 <br>
@@ -99,12 +107,14 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.42 PM.png" alt="pic11">
 </div>
+  ![process](/240306_first_post/img2.png)
+
 <p>At first, I tried to understand for loop and line. Line has 4 arguments: x, y, start point and end point. i++ means i = x + 1, and it will keep adding up while running for loop. I was trying to figure out how to make them straight</p>
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.16 PM.png" alt="pic12">
 </div> -->
-  ![process](/240306_first_post/img4.png)
+  ![process](/240306_first_post/img3.png)
 
 <p>After making the horizontal lines straight, I duplicated and switch numbers to create vertical lines. *: spacing, +: offset.</p>
 
