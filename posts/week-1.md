@@ -8,7 +8,7 @@ disable_html_sanitization: true
   <iframe src="https://editor.p5js.org/kimnhudiep2003/full/4xTclF0v2" width ="100%" height = "242px"></iframe>
 </div>
 
-<p>Here is what I learned in the first session!</p>
+Here is what I learned in the first session!
 
 # Homework
 
@@ -34,7 +34,7 @@ disable_html_sanitization: true
 
 ![process](/240306_first_post/img7.png)
 
-<p>1. I laid out all the rectangles into places first for the layout. Then, to fill gradient color in later. But, what I thought was wrong. Creating gradient blocks in this was harder than I thought...</p>
+1. I laid out all the rectangles into places first for the layout. Then, to fill gradient color in later. But, what I thought was wrong. Creating gradient blocks in this was harder than I thought...
 
 
 <!-- <div align="center">
@@ -42,34 +42,34 @@ disable_html_sanitization: true
 </div>  -->
 ![process](/240306_first_post/img8.png)
 
-<p>2. Then I was playing around map function for a while, and still trying to figure out how to do gradient.</p>
+2. Then I was playing around map function for a while, and still trying to figure out how to do gradient.
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.34.45 PM.png" alt="pic4">
 </div> -->
 ![process](/240306_first_post/img9.png)
 
-<p>3. Then, I found a tutorial that uses lerpColor function and map function to do gradient that I can mostly understand.</p>
+3. Then, I found a tutorial that uses lerpColor function and map function to do gradient that I can mostly understand.
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.01.54 PM.png" alt="pic5">
 </div> -->
 ![process](/240306_first_post/img10.png)
 
-<p>4. I can created gradient but struggled to place the gradient into blocks and move the as shapes. As I understand, it was because the gradient was drawn by lines using loops.</p>
+4. I can created gradient but struggled to place the gradient into blocks and move the as shapes. As I understand, it was because the gradient was drawn by lines using loops.
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.08.56 PM.png" alt="pic6">
 </div> -->
 
-<p>5. I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.</p>
+5. I divided them into 4 to play around and see what can I do with them. They cannot do anything, but I'm getting there.
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 6.45.52 PM.png" alt="pic7">
 </div> -->
 ![process](/240306_first_post/img11.png)
 
-<p>6. Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later...</p>
+6. Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later...
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.13.36 PM.png" alt="pic8">
@@ -77,7 +77,7 @@ disable_html_sanitization: true
 ![process](/240306_first_post/img12.png)
 
 
-<p>7. But, I also failed to do that =).</p>
+7. But, I also failed to do that =).
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.43.54 PM.png" alt="pic9">
@@ -89,7 +89,7 @@ disable_html_sanitization: true
 </div> -->
 ![process](/240306_first_post/img14.png)
 
-<p>8. Then I duplicated more gradients and tried to draw them from this point to another point on the canvas, and it seemed to be fine. And I worked on that but haven't really figured out how to animate the gradient yet. 
+8. Then I duplicated more gradients and tried to draw them from this point to another point on the canvas, and it seemed to be fine. And I worked on that but haven't really figured out how to animate the gradient yet. 
 
 ![process](/240306_first_post/img16.png)
 ![process](/240306_first_post/img17.png)
@@ -110,14 +110,14 @@ disable_html_sanitization: true
 </div> -->
   ![process](/240306_first_post/img3.png)
 
-<p>At first, I tried to understand for loop and line. Line has 4 arguments: x, y, start point and end point. i++ means i = x + 1, and it will keep adding up while running for loop. I was trying to figure out how to make them straight</p>
+1. At first, I tried to understand for loop and line. Line has 4 arguments: x, y, start point and end point. i++ means i = x + 1, and it will keep adding up while running for loop. I was trying to figure out how to make them straight.
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.16 PM.png" alt="pic12">
 </div> -->
   ![process](/240306_first_post/img4.png)
 
-<p>After making the horizontal lines straight, I duplicated and switch numbers to create vertical lines. *: spacing, +: offset.</p>
+2. After making the horizontal lines straight, I duplicated and switch numbers to create vertical lines. *: spacing, +: offset.
 
   ![process3](/240306_first_post/img5.png)
 
