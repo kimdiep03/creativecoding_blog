@@ -23,9 +23,9 @@ disable_html_sanitization: true
 <br> 
 <br>
 
-<div align="center">
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png" alt="pic1">
-</div>
+</div> -->
 ![process](/240306_first_post/img6.png)
 
 <div align="center">
