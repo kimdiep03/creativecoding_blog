@@ -5,6 +5,9 @@ snippet: Process Documentation
 disable_html_sanitization: true
 ---
 # Discussion
+<div align="center">
+    I chose to respond to this work (https://www.futureisuncertain.com/) by Rafaël Rozendaal
+</div>
 1. What about the work makes it belong to the aesthetic category of "cute"?
 
 2. How does the artist employ effective complexity in the work to achieve its aesthetic result?
