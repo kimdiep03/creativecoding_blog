@@ -5,6 +5,8 @@ snippet: Process Documentation
 disable_html_sanitization: true
 ---
 # Discussion
+![process](/240328_fourth_post/img1.png)
+
 <div align="center">
     I chose to respond to this work (https://www.futureisuncertain.com/) by Rafaël Rozendaal. 
 </div>
