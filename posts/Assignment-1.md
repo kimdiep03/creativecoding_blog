@@ -14,6 +14,7 @@ disable_html_sanitization: true
 
 1. What about the work makes it belong to the aesthetic category of "cute"?
 
+
 2. How does the artist employ effective complexity in the work to achieve its aesthetic result?
 
 
