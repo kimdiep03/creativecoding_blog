@@ -28,15 +28,19 @@ disable_html_sanitization: true
 </div> -->
 ![process](/240306_first_post/img6.png)
 
-<div align="center">
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 3.59.00 PM.png" alt="pic2">
-</div>
+</div> -->
+
+![process](/240306_first_post/img7.png)
 
 <p>I laid out all the rectangles into places first for the layout. Then, to fill gradient color in later. But, what I thought was wrong. Creating gradient blocks in this was harder than I thought...</p>
 
-<div align="center">
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 5.01.42 PM.png" alt="pic3">
-</div> 
+</div>  -->
+![process](/240306_first_post/img8.png)
+
 <p>Then I was playing around map function for a while, and still trying to figure out how to do gradient.</p>
 
 <div align="center">
