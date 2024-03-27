@@ -91,6 +91,9 @@ disable_html_sanitization: true
 
 <p>Then I duplicated more gradients and tried to draw them from this point to another point on the canvas, and it seemed to be fine. And I worked on that but haven't really figured out how to animate the gradient yet. 
 
+![process](/240306_first_post/img16.png)
+![process](/240306_first_post/img17.png)
+
 <br>
 <br>
 My initial thought of how did Rafaël Rozendaa do this was (1) creating the gradient, (2.1) put them into blocks which can be translated, move around, or flipped, or (2.2) created the 2 kind of gradients, one horizontally linear and one vertically linear, manually like I did, (3) animate the lines of gradient to move while changing color?</p>
@@ -104,17 +107,17 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
 **Process**
 <br>
 <br>
-<div align="center">
+<!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.42 PM.png" alt="pic11">
-</div>
-  ![process](/240306_first_post/img2.png)
+</div> -->
+  ![process](/240306_first_post/img3.png)
 
 <p>At first, I tried to understand for loop and line. Line has 4 arguments: x, y, start point and end point. i++ means i = x + 1, and it will keep adding up while running for loop. I was trying to figure out how to make them straight</p>
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-11 at 2.13.16 PM.png" alt="pic12">
 </div> -->
-  ![process](/240306_first_post/img3.png)
+  ![process](/240306_first_post/img4.png)
 
 <p>After making the horizontal lines straight, I duplicated and switch numbers to create vertical lines. *: spacing, +: offset.</p>
 
