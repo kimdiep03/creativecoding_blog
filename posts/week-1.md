@@ -69,7 +69,7 @@ disable_html_sanitization: true
 </div> -->
 ![process](/240306_first_post/img11.png)
 
-<p>Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later...</p>
+<p>6. Then, I have this gradient color by changing the color from this to that in 4 divided parts. Then, I followed the tutorial to put the gradient into class in another file, and from that put it into blocks and call the gradient blocks in sketch.js later...</p>
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.13.36 PM.png" alt="pic8">
@@ -77,7 +77,7 @@ disable_html_sanitization: true
 ![process](/240306_first_post/img12.png)
 
 
-<p>But, I also failed to do that =).</p>
+<p>7. But, I also failed to do that =).</p>
 
 <!-- <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 7.43.54 PM.png" alt="pic9">
@@ -89,14 +89,12 @@ disable_html_sanitization: true
 </div> -->
 ![process](/240306_first_post/img14.png)
 
-<p>Then I duplicated more gradients and tried to draw them from this point to another point on the canvas, and it seemed to be fine. And I worked on that but haven't really figured out how to animate the gradient yet. 
+<p>8. Then I duplicated more gradients and tried to draw them from this point to another point on the canvas, and it seemed to be fine. And I worked on that but haven't really figured out how to animate the gradient yet. 
 
 ![process](/240306_first_post/img16.png)
 ![process](/240306_first_post/img17.png)
 
-<br>
-<br>
-My initial thought of how did Rafaël Rozendaa do this was (1) creating the gradient, (2.1) put them into blocks which can be translated, move around, or flipped, or (2.2) created the 2 kind of gradients, one horizontally linear and one vertically linear, manually like I did, (3) animate the lines of gradient to move while changing color?</p>
+9.  My initial thought of how did Rafaël Rozendaa do this was (1) creating the gradient, (2.1) put them into blocks which can be translated, move around, or flipped, or (2.2) created the 2 kind of gradients, one horizontally linear and one vertically linear, manually like I did, (3) animate the lines of gradient to move while changing color?</p>
 
 ## HW2
 <div align="center">
@@ -130,6 +128,6 @@ My initial thought of how did Rafaël Rozendaa do this was (1) creating the grad
   ![process3](/240306_first_post/IMG_5145.jpg)
   ![process3](/240306_first_post/IMG_5146.jpg)
 
-
-
+<br>
+<br>
 
