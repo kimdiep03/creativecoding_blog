@@ -26,7 +26,7 @@ disable_html_sanitization: true
 <div align="center">
   <img src="/static/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png" alt="pic1">
 </div>
-
+![process3](/240306_first_post/img6.png)
 ![process3](/240306_first_post/Screenshot 2024-03-12 at 2.46.07 PM.png)
 
 <div align="center">
