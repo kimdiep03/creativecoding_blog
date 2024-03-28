@@ -24,6 +24,7 @@ Here is what I did while learning from Coding Train
 
 ![process](/240328_second_post/img1.png)
 ![process](/240328_second_post/img2.png)
+![process](/240328_second_post/img3.png)
 
 ## HW2
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/9cRXiiKyP" width = "100%" height = "500px"></iframe>
