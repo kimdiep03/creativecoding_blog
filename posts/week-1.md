@@ -10,6 +10,11 @@ disable_html_sanitization: true
 
 Here is what I learned in the first session!
 
+# Learning
+<div align="center">
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/wbuM03pbN" width ="500px" height = "442px"></iframe>
+</div>
+
 # Homework
 
 ## HW1
