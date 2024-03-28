@@ -12,7 +12,7 @@ Here is what I learned in the first session!
 
 # Learning
 <div align="center">
-<iframe src="https://editor.p5js.org/kimnhudiep2003/full/Mf_NvGB4H" width ="500" height = "442px"></iframe>
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/Mf_NvGB4H" width ="500" height = "242px"></iframe>
 </div>
 
 # Homework
