@@ -27,5 +27,6 @@ Cute is highly effective because it uses simple visual cues (large, round eyes, 
 3. Document and discuss how the javascript techniques and design concepts you are using contribute to the aesthetic register of your response.
  
 # Technical Process
+
 ![process](/240328_fourth_post/img2.png)
 
