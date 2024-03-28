@@ -17,6 +17,7 @@ disable_html_sanitization: true
 
 2. How does the artist employ effective complexity in the work to achieve its aesthetic result?
 
+Cute is highly effective because it uses simple visual cues (large, round eyes, soft, etc) to trigger complex emotions (adoration and possession). 
 
 # Creative Process
 1. What attributes of the original work would you like to retain? What aspects would you like to improve / change?

@@ -33,5 +33,7 @@ Complexity is randomness and without any orders. Gell-Mann's concept of effectiv
 
 Within a cute aesthetic frame, more than its appearance, cuteness taps into specific emotions and desires. With its innocence appearance, it conveys a particular message about a perfect world. This message is the meaningful information that makes cuteness effective in a capitalist system. Effective complexity is about how efficiently something uses its parts to create a desired outcome. Cute is highly effective because it uses simple visual cues (large, round eyes, soft, etc) to trigger complex emotions (adoration and possession) and drives consumption. Capitalism exploits this efficiency to manipulate our emotions and makes us buy cute products. 
 
+<br>
+<br>
 
 

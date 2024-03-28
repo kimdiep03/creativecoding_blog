@@ -6,6 +6,9 @@ disable_html_sanitization: true
 ---
 # Learning
 <iframe src="https://editor.p5js.org/kimnhudiep2003/full/lArm88S1c" width ="400px" height ="442px"></iframe>
+
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/bzN2WeHn3" width ="400px" height ="442px"></iframe>
+
 <p>Here is what I did while learning from Coding Train</p>
 
 # Homework
