@@ -11,8 +11,10 @@ disable_html_sanitization: true
     I chose to respond to this work (https://www.futureisuncertain.com/) by Rafaël Rozendaal. 
 </div>
 
+<br>
+<br>
 <div align="center">
-<iframe src="https://editor.p5js.org/kimnhudiep2003/full/T60spMlxo" width = 100% height = 500px></iframe>
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/T60spMlxo" width = 100% height = 400px></iframe>
 </div>
 
 <br>
