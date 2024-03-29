@@ -24,7 +24,7 @@ Rafaël's use of color in this work is cute. The bright, saturated hues adorning
 **1. What attributes of the original work would you like to retain? What aspects would you like to improve / change?**
 
 I would like to respond to Rafaël's work with 'and' that continue what he said: 'future is uncertain...and death is the only thing that is certain'. 
-<br>
+
 I would like to keep the vertically sliding trapezoids and add in my response. Ideally, I would like to 
 
 
