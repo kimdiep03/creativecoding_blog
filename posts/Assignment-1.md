@@ -23,7 +23,7 @@ Rafaël's use of color in this work is cute. The bright, saturated hues adorning
 # Creative Process
 **1. What attributes of the original work would you like to retain? What aspects would you like to improve / change?**
 
-I would like to respond to Rafaël's work with 'and' that continue what he said: 'future is uncertain...and death is the only thing that is certain'. 
+I would like to respond to Rafaël's work with 'and' that continue what he said: 'future is uncertain...and the only thing that is certain is death'. 
 <br>
 
 ![process](/240328_fourth_post/img3.png)
