@@ -14,10 +14,13 @@ disable_html_sanitization: true
 
 1. What about the work makes it belong to the aesthetic category of "cute"?
 
+In this work, the use of color is cute. Rafaël's use of bright and saturated color are innocent in the vertically sliding trapezoids. It feels like we are going to somewhere magical and in fact every step we take is uncertain. It highlights the
+
+innocent when his message is trying to communicate something that is mor
 
 2. How does the artist employ effective complexity in the work to achieve its aesthetic result?
 
-Cute is highly effective because it uses simple visual cues (large, round eyes, soft, etc) to trigger complex emotions (adoration and possession). 
+ Rafaël's use of simple visual elements (color, shape, and composition) effectively evokes a sense of anxiety about the unknown future. His work captures the feeling of precariously walking a narrow path, an ocean below. We're left uncertain of the next step, mirroring the anxieties of an uncertain future.
 
 # Creative Process
 1. What attributes of the original work would you like to retain? What aspects would you like to improve / change?

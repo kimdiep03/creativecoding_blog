@@ -21,6 +21,10 @@ disable_html_sanitization: true
 ![process](/240328_third_post/snoopy.png)
 ![process](/240328_third_post/kitty.png)
 <br>
+
+![process](/240328_third_post/zanycuteinteresting.jpg)
+
+<br>
 1. In your own words, and using examples from the internet, draw on the readings from this week to define what "cute" is, as an aesthetic category.  Post your discussion to your blog.
 <br>
 
