@@ -12,7 +12,7 @@ export default function Layout({ Component, state }: PageProps) {
       <link rel="icon" type="image/png" href="/favicon.png" />
     </Head>
   
-    <Component />
+    <Component/>
   </>
   );
 }

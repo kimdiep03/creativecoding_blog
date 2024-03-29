@@ -26,6 +26,9 @@ Rafaël's use of color in this work is cute. The bright, saturated hues adorning
 I would like to respond to Rafaël's work with 'and' that continue what he said: 'future is uncertain...and death is the only thing that is certain'. 
 <br>
 
+![process](/240328_fourth_post/img3.png)
+![process](/240328_fourth_post/img4.png)
+
 I would like to keep the vertically sliding trapezoids and add in my response. Ideally, the work is like looking down while walking then I would like to add a look up, then we can see the end of the journey, which is death. 
 
 **2. In what way is your work in dialogue with the Rozendaal piece you have chosen?**
