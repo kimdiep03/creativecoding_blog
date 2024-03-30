@@ -46,13 +46,19 @@ I would like to respond to Rafaël's work with 'and' that continue what he said:
 # Technical Process
 
 ![process](/240328_fourth_post/img2.png)
+1. At first, I attempted to draw a quad with numbers.
 ![process](/240328_fourth_post/img5.png)
+2. Then, I tried to change the way to measure the trapezoid.
 ![process](/240328_fourth_post/img6.png)
+3. Using lerp distance to lerp from top to bottom to create animation but failed.
 ![process](/240328_fourth_post/img7.png)
+4. I realized it is not very effective in what I'm doing because there were many points to control.
 ![process](/240328_fourth_post/img8.png)
+5. Used the bottom and top line in the middle trapezoid to draw the trapezoids + deltaTime to animate + create a rectangle for the horizon when click mouse and push the sliding trapezoid down.
 ![process](/240328_fourth_post/img9.png)
+6. Created gradient sky.
 ![process](/240328_fourth_post/img10.png)
-
+7. I attempted to change the gradient color of sky every click mouse but failed.
 
 
 
