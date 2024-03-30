@@ -47,4 +47,12 @@ I would like to respond to Rafaël's work with 'and' that continue what he said:
 
 ![process](/240328_fourth_post/img2.png)
 ![process](/240328_fourth_post/img5.png)
+![process](/240328_fourth_post/img6.png)
+![process](/240328_fourth_post/img7.png)
+![process](/240328_fourth_post/img8.png)
+![process](/240328_fourth_post/img9.png)
+![process](/240328_fourth_post/img10.png)
+
+
+
 
