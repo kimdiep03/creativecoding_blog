@@ -14,7 +14,7 @@ disable_html_sanitization: true
 <br>
 <br>
 <div align="center">
-<iframe src="https://editor.p5js.org/kimnhudiep2003/full/KMWNJ-IHd" width = "100%" height = "500px"></iframe>
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/KMWNJ-IHd" width = "100%" height = "700px"></iframe>
 </div>
 <br>
 
