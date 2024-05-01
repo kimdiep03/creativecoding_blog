@@ -159,7 +159,7 @@ function draw() {
 
 ```html
 <script>
-    let x, y, d;
+let x, y, d;
 let posX, posY, w, h;
 
 function setup() {
