@@ -1,85 +1,161 @@
 ---
-title: Sixth Session
-published_at: 2024-04-17
-snippet: My sixth blog
+title: Fourth Session
+published_at: 2024-04-3
+snippet: My fourth blog
 disable_html_sanitization: true
 ---
+# Learning
+<div align="center">
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/cnuZONnLQ" width = "400px" height = "442px"></iframe>
+</div>
 
-<!-- <script scr="/scripts/p5.min.js"></script>
-<script src="/scripts/c2.js"></script>
-
-Code from [link](https://github.com/ren-yuan/c2.js/blob/main/examples/ConstForce.js).
-
-<canvas id="c2_test"/>
-
+```html
 <script>
-    //Created by Ren Yuan
-console.dir (p5)
-const renderer = new c2.Renderer(document.getElementById('c2_test'));
-resize();
-
-renderer.background('#cccccc');
-let random = new c2.Random();
+let xoff1 = 0;
+let xoff2 = 10000;
 
 
-let world = new c2.World(new c2.Rect(0, 0, renderer.width, renderer.height));
-
-for(let i=0; i<100; i++){
-  let x = random.next(renderer.width);
-  let y = random.next(renderer.height);
-  let p = new c2.Particle(x, y);
-  p.radius = random.next(10, renderer.height/14);
-  p.color = c2.Color.hsl(random.next(0, 30), random.next(30, 60), random.next(20, 100));
-
-  world.addParticle(p);
+function setup() {
+  createCanvas(400, 400);
+  colorMode(HSB);
 }
 
-let quadTree = new c2.QuadTree(new c2.Rect(0,0,renderer.width,renderer.height));
-let collision = new c2.Collision(quadTree);
-//collision.iteration = 2;
-world.addInteractionForce(collision);
+function draw() {
+  // background(90, 30, 80);
+  //noStroke();
+  loadPixels();
+  
+  //random();
+  let x = random(width);
+  let y = random(height);
+  
+  fill(130, 50, 70);
+  ellipse(x, y, 24, 24);
+  
+  //noise()_#1;
+  let a = map(noise(xoff1), 0, 1, 9, width);
+  let b = map(noise(xoff2), 0, 1, 9, height);
 
-let constForce = new c2.ConstForce(0, 1);
-world.addForce(constForce);
+  fill(250, 100, 70);
+  ellipse(a, b, 50);
+  
+  xoff1 += 0.01;  
+  xoff2 += 0.01;  
+  
+  //noise()_#2;
+  for (let i = 0; i < width; i++) {
+    stroke(220, 100, 100);
+    point(i, random(height));
+  }
 
+}
+</script>
+```
 
-function drawQuadTree(quadTree){
-    renderer.stroke('#333333');
-    renderer.lineWidth(1);
-    renderer.fill(false);
-    renderer.rect(quadTree.bounds);
+<div align="center">
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/Y-ltv4G_C" width="400px" height="342px"></iframe>
+</div>
 
-    if(quadTree.leaf()) return;
-    for(let i=0; i<4; i++) drawQuadTree(quadTree.children[i]);
+```html
+<script>
+let inc = 0.005;
+
+function setup() {
+  createCanvas(400, 300);
+  pixelDensity(1);
 }
 
-
-renderer.draw(() => {
-    renderer.clear();
-
-    drawQuadTree(quadTree);
-
-    world.update();
-
-    for(let i=0; i<world.particles.length; i++){
-      let p = world.particles[i];
-      renderer.stroke('#333333');
-      renderer.lineWidth(1);
-      renderer.fill(p.color);
-      renderer.circle(p.position.x, p.position.y, p.radius);
-      renderer.lineWidth(2);
-      renderer.point(p.position.x, p.position.y);
+function draw() {
+  
+  let yoff = 0;
+  loadPixels();
+  for (let y = 0; y < height; y++) {
+    let xoff = 0;
+    for (let x = 0; x < width; x++) {
+      let index = (x + y * width) * 4;
+      let r = noise(xoff, yoff) * 255;
+      pixels[index + 0] = r;
+      pixels[index + 1] = r;
+      pixels[index + 2] = r;
+      pixels[index + 3] = 255;
+      
+      xoff += inc;
     }
-});
-
-
-window.addEventListener('resize', resize);
-function resize() {
-    let parent = renderer.canvas.parentElement;
-    renderer.size(parent.clientWidth, parent.clientWidth / 16 * 9);
+    yoff += inc
+  }
+  updatePixels();
+  
 }
-</script> -->
+</script>
+```
 
+<div align = "center">
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/d8pKSKXT8" width="400px" height="442px"></iframe>
+</div>
+
+```html
+<script>
+    //follow this tutorial: https://youtu.be/Qf4dIN99e2w?si=7tGWcn27WLDbHekc
+
+let inc = 0.1;
+let scl = 10; 
+let cols, rows;
+
+let zoff = 0;
+
+let particles = [];
+let flowfield;
+
+function setup() {
+  createCanvas(400, 400);
+  background (220);
+  cols = floor(width / scl);
+  rows = floor(height / scl);
+  
+  flowfield = new Array(cols * rows);
+  
+  for (let i = 0; i < 500; i++) {
+  particles[i] = new Particle();
+  }
+}
+
+function draw() {
+  let yoff = 0;
+  for (let y = 0; y < rows; y++) {
+    let xoff = 0;
+    for (let x = 0; x < cols; x++) {
+      let index = (x + y * cols);
+      let angle = noise(xoff, yoff, zoff) * TWO_PI * 4;
+      let v = p5.Vector.fromAngle(angle);
+      v.setMag(5);
+      flowfield[index] = v;
+      xoff += inc;
+      stroke(0, 20);
+      // push();
+      // translate(x * scl, y * scl);
+      // rotate(v.heading());
+      // strokeWeight(1);
+      // line(0, 0, scl, 0);
+      // pop();
+    }
+    yoff += inc
+    
+    zoff += 0.0001;
+  }
+  
+  for (let i = 0; i < particles.length; i++) {
+    particles[i].follow(flowfield);
+    particles[i].update();
+    particles[i].show(); 
+    particles[i].edges();
+  }
+
+} 
+</script>
+```
+
+
+# Homework
 <canvas id="glitch_self_portrait"></canvas>
 
 <script type="module">
@@ -275,7 +351,7 @@ function resize() {
          glitch_i = rand_int (glitch_arr.length)
          is_glitching = !is_glitching
       }
-
+    //call the next animation frame
       requestAnimationFrame (draw_frame)
    }
 
