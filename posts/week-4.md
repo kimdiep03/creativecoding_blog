@@ -200,7 +200,7 @@ function drawCircle(x, y, d) {
 
 ```html
 <script>
-    let x, y;
+let x, y;
 let count = 0;
 
 function setup() {
@@ -255,13 +255,61 @@ function colRect() {
 </script>
 ```
 
+<div align ="center">
+    <iframe src="https://editor.p5js.org/kimnhudiep2003/full/8OtGKqr_2" width="400px" height="462px"></iframe>
+</div>
+
+```html
+<script>
+    let slider; 
+let angle;
+
+
+function setup() {
+  createCanvas(400, 400);
+  colorMode(HSB)
+  
+  angle = PI/4;
+  
+  slider = createSlider(0, TWO_PI, PI/4);
+  frameRate(5)
+}
+
+function draw() {
+  background(random(300, 360), 30, 70);
+
+  angle = slider.value();
+  let len = 100;
+  stroke(random(100, 250), 50, 80);
+  strokeWeight(2.5);
+  translate(200, height);
+  branch(100);
+  
+}
+
+function branch(len) {
+  line(0, 0, 0, -len);
+  translate(0, -len);
+  if (len > 4) {
+    push();
+    rotate(angle);
+    branch(len*0.67);
+    pop();
+    push();
+    rotate(-angle)
+    branch(len*0.67);
+    pop();
+  }
+}
+</script>
+```
 
 # Homework
-<canvas id="homework_fractal"></canvas>
+<canvas id="fractal_tree_0"></canvas>
 
 <script type="module">
     // getting canvas element
-    const cnv = document.getElementById (`homework_fractal`)
+    const cnv = document.getElementById (`fractal_tree_0`)
     
     // sizing size
     cnv.width = cnv.parentNode.scrollWidth
@@ -272,5 +320,113 @@ function colRect() {
 
     // canvas context
    const ctx = cnv.getContext (`2d`)
+   const TAU = Math.PI * 2
+
+class Vector {
+    constructor (x, y) {
+        this.x = x
+        this.y = y
+    }
+
+    add (v) {
+        this.x += v.x
+        this.y += v.y
+    }
+
+    subtract (v) {
+        this.x -= v.x
+        this.y -= v.y
+    }
+
+    mult (m) {
+        this.x *= m
+        this.y *= m
+    }
+
+    mag () { // using a^2 + b^2 = c^2
+        return ((this.x ** 2) + (this.y ** 2)) ** 0.5
+    }
+
+    setMag (m) {
+        this.mult (m / this.mag ())
+    }
+
+    rotate (a) {
+        // from "Formula for rotating a vector in 2D" by Matthew Brett
+        // https://matthew-brett.github.io/teaching/rotation_2d.html
+
+        const new_x = (this.x * Math.cos (a)) - (this.y * Math.sin (a))
+        const new_y = (this.x * Math.sin (a)) + (this.y * Math.cos (a))
+
+        this.x = new_x
+        this.y = new_y
+    }
+
+    clone () {
+        return new Vector (this.x, this.y)
+    }
+}
+
+function vector_from_angle (angle, magnitude) {
+    const x = magnitude * Math.cos (angle)
+    const y = magnitude * Math.sin (angle)
+    return new Vector (x, y)
+}
+
+   function tree (base, stem, generation) {
+
+        // start with the base position
+        // we want to tranform it, so we make a copy
+        const end = base.clone ()
+
+        // add the stem to the start position
+        end.add (stem)
+
+        // draw the line from the start point
+        // to the end point
+        ctx.beginPath ()
+        ctx.moveTo (base.x, base.y)
+        ctx.lineTo (end.x, end.y)
+        ctx.stroke ()
+
+        // if generations is still positive
+        if (generation > 0) {
+
+            // clone the stem
+            const L_stem = stem.clone ()
+
+            // rotate it anti-clockwise
+            L_stem.rotate (-TAU / 7)
+
+            // reduce the length
+            L_stem.mult (0.6)
+
+            // clone the stem again
+            const R_stem = stem.clone ()
+
+            // rotate this one clockwise
+            R_stem.rotate (TAU / 7)
+
+            // reduce its length
+            R_stem.mult (0.6)
+
+            // decrease generation by 1
+            const next_gen = generation - 1
+
+            tree (end, L_stem, next_gen)
+            tree (end, R_stem, next_gen)
+        }
+    }
+
+    const seed = new Vector (cnv.width / 2, cnv.height)
+
+    const shoot = new Vector (0, -150)
+
+    tree (seed, shoot, 7)  
 </script>
+<br>
+
+**Can this method be used to maximize chaos? How might you use it in assignment 2?**
+<br>
+"This approach enhances chaos by increasing the number of recursive patterns, which are then combined with elements of randomness and noise."
 

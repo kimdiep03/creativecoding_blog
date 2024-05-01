@@ -350,55 +350,17 @@ function drawCircle(col1, col2, s1, s2, b1, b2) {
 
 </script>
 ```
-<canvas id="pixel_sort"></canvas>
 
-<script type="module">
-   import { PixelSorter } from "/scripts/pixel_sort.js"
+**#2: Discussion:**
 
-   const cnv  = document.getElementById (`pixel_sort`)
-   cnv.width  = cnv.parentNode.scrollWidth
-   cnv.height = cnv.width * 9 / 16   
+**I. Which of Ngai's aesthetic categories does your self-portrait (and glitch more generally) belong to, and why?**
+<br>
 
-   const ctx = cnv.getContext (`2d`)
-   const sorter = new PixelSorter (ctx)
+Glitch, can be categorized under 'Zany' in Ngai's aesthetic framework, embodies an exaggerated, chaotic spectacle that stems from a loss of control. Originally defined as an error, glitch aligns with Ngai's depiction of Zany as a tendency to transform triumph into failure, and often characterized by clumsy attempts at imitation or mimicry.
 
-   const img = new Image ()
+<br>
 
-   img.onload = () => {
-      cnv.height = cnv.width * (img.height / img.width)
-      ctx.drawImage (img, 0, 0, cnv.width, cnv.height)
-      sorter.init ()
-      draw_frame ()
-   }
+**II. Does glitch increase or decrease effective complexity, and why?**
+<br>
 
-   img.src = `/240417_fifth_post/mood congruency.jpg`
-
-   let frame_count = 0
-   const draw_frame = () => {
-
-      ctx.drawImage (img, 0, 0, cnv.width, cnv.height)
-
-      let sig = Math.cos (frame_count * 2 * Math.PI / 500)
-
-      const mid = {
-         x: cnv.width / 2,
-         y: cnv.height / 2
-      }
-
-      const dim = {
-         x: Math.floor ((sig + 3) * (cnv.width / 6)) + 1,
-         y: Math.floor ((sig + 1) * (cnv.height / 6)) + 1
-      }
-
-      const pos = {
-         x: Math.floor (mid.x - (dim.x / 2)),
-         y: Math.floor (mid.y - (dim.y / 2))
-      }
-
-      sorter.glitch (pos, dim)
-
-      frame_count++
-      requestAnimationFrame (draw_frame)
-   }
-
-</script>
+With the goal of chaos, glitch 
