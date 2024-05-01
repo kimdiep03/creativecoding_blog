@@ -153,207 +153,124 @@ function draw() {
 } 
 </script>
 ```
+<div align="center">
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/gsrR01v6_" width="400px" height="442px"></iframe>
+</div>
+
+```html
+<script>
+    let x, y, d;
+let posX, posY, w, h;
+
+function setup() {
+  createCanvas(400, 400);
+  background(0);
+  colorMode(HSB);
+  frameRate(8);
+}
+
+function draw() {
+  drawingContext.globalAlpha = 0.5;
+  drawCircle(width/2, height/2, 300)
+  
+  fill(random(0, 50), 70, 90);
+  rect(0, 0, width, height)
+}
+
+function drawCircle(x, y, d) {
+  //noFill();
+  noStroke();
+  fill(random(180, 220), 60, 80);
+  ellipse(x, y, d, d);
+  if (d > 5) {
+    drawCircle(x+d/2, y, d/2);
+    drawCircle(x-d/2, y, d/2);
+    drawCircle(x, y+d/2, d/2);
+    drawCircle(x, y-d/2, d/2);
+
+  }
+}
+</script>
+```
+
+
+<div align="center">
+<iframe src="https://editor.p5js.org/kimnhudiep2003/full/Y5DSYx_ms" width="600px" height="592px"></iframe>
+</div>
+
+```html
+<script>
+    let x, y;
+let count = 0;
+
+function setup() {
+  createCanvas(innerWidth, innerHeight);
+  background(220);
+  colorMode(HSB);
+}
+
+function draw() {
+  // x = mouseX;
+  // y = mouseY;
+  x = width/2;
+  y = height/2;
+  
+  drawingContext.filter = 'blur(200px)';
+  rectMode(CENTER);
+  noStroke();
+  frameRate(2);
+  
+  let colorX = map(x, 0, width, 0, 360);
+  let colorY = map(y, 0, height, 0, 100);
+  
+  // count+=0.1;
+  
+  // stroke(colorX, colorY, 0);
+  // line(x-20, y, x+20, y);
+  
+  // translate(width/2, height/2);
+  // rotate(count);
+  // noStroke();
+  // rect(0, 0, 50, 50); //xpos, ypos for translate
+  
+  x = random(0, width);
+  y = random(0, height);
+  d = (random(width/4, width))
+  
+  colRect();
+  //greyRect();
+}
+
+function greyRect() {
+  fill(random(100, 250), 0, random(0, 100));
+  // fill(colorX, 70, colorY);
+  rect(x, y, d, d);
+}
+
+function colRect() {
+  fill(random(360), 90, random(90, 100));
+  // fill(colorX, 70, colorY);
+  rect(x, y, d, d);
+} 
+</script>
+```
 
 
 # Homework
-<canvas id="glitch_self_portrait"></canvas>
+<canvas id="homework_fractal"></canvas>
 
 <script type="module">
+    // getting canvas element
+    const cnv = document.getElementById (`homework_fractal`)
+    
+    // sizing size
+    cnv.width = cnv.parentNode.scrollWidth
+    cnv.height = cnv.width * 9 / 16
 
-//getting canvas element
-   const cnv = document.getElementById (`glitch_self_portrait`)
-
-//sizing to be good size
-   cnv.width = cnv.parentNode.scrollWidth
-   cnv.height = cnv.width * 9 / 16
-
-//setting background color
+    // setting background colour
    cnv.style.backgroundColor = `deeppink`
 
-//getting canvas context
+    // canvas context
    const ctx = cnv.getContext (`2d`)
-
-//instatiating variable for image data 
-   let img_data
-
-//defining a function that draws an image to the canvas
-   const draw = i => ctx.drawImage (i, 0, 0, cnv.width, cnv.height)
-
-//create a new img element
-   const img = new Image ()
-
-//define function to execute upon loading image file
-   img.onload = () => {
-
-    //resizing the height of the canvas 
-    //to be the same aspect ratio as image 
-      cnv.height = cnv.width * (img.height / img.width)
-    
-    //drawing the image to the canvas
-      draw (img)
-
-    //storing image data as string in img_data 
-      img_data = cnv.toDataURL ("image/jpeg")
-
-    //call the glitch function 
-      add_glitch ()
-   }
-   
-//give filepath to image element 
-   img.src = `/240417_fifth_post/mood congruency.jpg`
-
-//define a function that returns a random value between 0-max 
-   const rand_int = max => Math.floor (Math.random () * max)
-
-//define a recursive function 
-   const glitchify = (data, chunk_max, repeats) => {
-    
-    //random multiple of 4 between 0 - chunk max
-      const chunk_size = rand_int (chunk_max / 4) * 4
-    
-    //random position in the data between 24 - chunk_size
-      const i = rand_int (data.length - 24 - chunk_size) + 24
-    
-    //grabbing all the data before the random position 
-      const front = data.slice (0, i)
-
-    //leaving a gap the size of chunk_size,
-    //grabbing the rest of the data  
-      const back = data.slice (i + chunk_size, data.length)
-
-    //putting the two pieces back together
-    //leaving out a chunk 
-      const result = front + back
-    
-    //ternary operator to return results if repeats = 0
-    //otherwise call itself again with repeats - 1
-      return repeats == 0 ? result : glitchify (result, chunk_max, repeats - 1)
-   }
-
-//instantiate empty array for glitched images 
-   const glitch_arr = []
-
-//define function that adds a glitched image
-//to the glitch_arr array
-   const add_glitch = () => {
-
-    //make a new image element
-      const i = new Image ()
-
-    //define function that executes when image receives its data
-      i.onload = () => {
-
-        //push the image into the glitch_arr array
-         glitch_arr.push (i)
-
-        //call itself until there are 12 glitched images
-         if (glitch_arr.length < 12) add_glitch ()
-
-        //one there are 12 images, start animating
-         else draw_frame ()
-      }
-
-    //give the new image some glitchified image data 
-      i.src = glitchify (img_data, 96, 6)
-   }
-
-//instantiate variable to keep track of glitch state
-   let is_glitching = false
-
-//keep track of which glitched image from the array we are using 
-   let glitch_i = 0
-
-   const draw_frame = () => {
-
-    //check to see if we are glitching
-    //if so, draw the glitched image from the array
-      if (is_glitching) draw (glitch_arr[glitch_i])
-
-    //otherwise draw the regular shape 
-      else draw (img)
-    
-    //probability weightings for starting and stopping the glitch
-      const prob = is_glitching ? 0.05 : 0.02
-
-    //if random value is less than weighted value 
-      if (Math.random () < prob) {
-    
-        //choose a rnadom glitched image index
-         glitch_i = rand_int (glitch_arr.length)
-
-        //flip the state of is_glitching 
-         is_glitching = !is_glitching
-      }
-    
-    //call the next animation frame
-      requestAnimationFrame (draw_frame)
-   }
-
 </script>
 
-```html
-<canvas id="glitch_self_portrait"></canvas>
-
-<script type="module">
-
-   const cnv = document.getElementById (`glitch_self_portrait`)
-   cnv.width = cnv.parentNode.scrollWidth
-   cnv.height = cnv.width * 9 / 16
-   cnv.style.backgroundColor = `deeppink`
-
-   const ctx = cnv.getContext (`2d`)
-
-   let img_data
-
-   const draw = i => ctx.drawImage (i, 0, 0, cnv.width, cnv.height)
-
-   const img = new Image ()
-   img.onload = () => {
-      cnv.height = cnv.width * (img.height / img.width)
-      draw (img)
-      img_data = cnv.toDataURL ("image/jpeg")
-      add_glitch ()
-   }
-   img.src = `/240417_fifth_post/mood congruency.jpg`
-
-   const rand_int = max => Math.floor (Math.random () * max)
-
-   const glitchify = (data, chunk_max, repeats) => {
-      const chunk_size = rand_int (chunk_max / 4) * 4
-      const i = rand_int (data.length - 24 - chunk_size) + 24
-      const front = data.slice (0, i)
-      const back = data.slice (i + chunk_size, data.length)
-      const result = front + back
-      return repeats == 0 ? result : glitchify (result, chunk_max, repeats - 1)
-   }
-
-   const glitch_arr = []
-
-   const add_glitch = () => {
-      const i = new Image ()
-      i.onload = () => {
-         glitch_arr.push (i)
-         if (glitch_arr.length < 12) add_glitch ()
-         else draw_frame ()
-      }
-      i.src = glitchify (img_data, 96, 6)
-   }
-
-   let is_glitching = false
-   let glitch_i = 0
-
-   const draw_frame = () => {
-      if (is_glitching) draw (glitch_arr[glitch_i])
-      else draw (img)
-
-      const prob = is_glitching ? 0.05 : 0.02
-      if (Math.random () < prob) {
-         glitch_i = rand_int (glitch_arr.length)
-         is_glitching = !is_glitching
-      }
-    //call the next animation frame
-      requestAnimationFrame (draw_frame)
-   }
-
-</script>
-```
