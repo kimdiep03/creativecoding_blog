@@ -350,17 +350,21 @@ function drawCircle(col1, col2, s1, s2, b1, b2) {
 
 </script>
 ```
+Refer to this [link](https://fresh-green-tomato.deno.dev/week-5-2) for the second part of #1 homework (separated because of lagging).
 
-**#2: Discussion:**
+**#2: Discussion**
 
 **I. Which of Ngai's aesthetic categories does your self-portrait (and glitch more generally) belong to, and why?**
 <br>
 
-Glitch, can be categorized under 'Zany' in Ngai's aesthetic framework, embodies an exaggerated, chaotic spectacle that stems from a loss of control. Originally defined as an error, glitch aligns with Ngai's depiction of Zany as a tendency to transform triumph into failure, and often characterized by clumsy attempts at imitation or mimicry.
+Glitch, can be categorized under 'Zany' in Ngai's aesthetic framework, embodies an exaggerated, chaotic spectacle that stems from a loss of control. Originally defined as errors or unexpected behaviors, glitch aligns with Ngai's depiction of Zany as a tendency to transform triumph into failure, and often characterized by clumsy attempts at imitation or mimicry, which mirrors the essence of glitches—errors that disrupt the expected flow of digital content, leading to unexpected and often entertaining results.
 
 <br>
 
 **II. Does glitch increase or decrease effective complexity, and why?**
 <br>
 
-With the goal of chaos, glitch 
+With the intention of creating chaos, the glitch effect can be utilized for effective complexity to create a dynamic, unpredictable outcome. This process of turning errors into art celebrates the unexpected and the irregular, offering an alternative perspective that appreciates beauty in places least expected, even in what we perceive as an error.
+<br>
+<br>
+<br>
