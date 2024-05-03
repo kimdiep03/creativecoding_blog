@@ -817,5 +817,12 @@
     "https://esm.sh/v135/twind@0.16.17/denonext/sheets.js": "2903e4706310977e97d39560c1ef0938097e746b8aa7b0c4503a96c5b6abd2e5",
     "https://esm.sh/v135/twind@0.16.17/denonext/twind.mjs": "6aa3dcacb083937bb654cf6a50e74270fa12ad8b9205a097324c467f55752188",
     "https://esm.sh/v135/xml-js@1.6.11/denonext/xml-js.mjs": "9d1e9b85bc3e74ef2327bf96800e0d752bcd0f55b323a2a6a5ca969624390e8c"
+  },
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:three@^0.164.1"
+      ]
+    }
   }
 }
