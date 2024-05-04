@@ -209,49 +209,343 @@ function glowingCircle(x, y, w, h) {
 # Homework
 
 **Three.js**
-<canvas id="threejs_example"></canvas>
+## 1. Three.js library
+
+Code from [link](https://hofk.de/main/discourse.threejs/2023/TwistedTorusParametric/TwistedTorusParametric.html)
+
+<div id="three_container"></div>
 
 <script type="module">
-    // getting canvas element
-    const cnv = document.getElementById (`threejs_example`)
-    
-    // sizing size
-    cnv.width = cnv.parentNode.scrollWidth
-    cnv.height = cnv.width * 9 / 16
 
-    // setting background colour
-   cnv.style.backgroundColor = `magenta`
+// @author PavelBoytchev
 
-  //  // import scene
-  //  import * as THREE from 'three';
+import * as THREE from '/scripts/three/three.module.js';
+import { ParametricGeometry } from '/scripts/three/ParametricGeometry.js';
+import { OrbitControls } from '/scripts/three/OrbitControls.js'
 
-  //  const scene = new THREE.Scene();
+// general setup, boring, skip to the next comment
 
-  //  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000);
+// Adjust the canvas size 
+const div = document.getElementById (`three_container`)
+const w = div.parentNode.scrollWidth
+const h = w * 9/16
 
-  //  const renderer = new THREE.WebGLRenderer({
-  //   canvas: document.querySelector('#bg'),
-  //  });
+console.clear( );
 
-  //  renderer.setPixelRatio();
-  //  renderer.setSize(window.innerWidth, window.innerHeight);
-  //  camera.position.setZ(30);
+var scene = new THREE.Scene();
+    scene.background = new THREE.Color( 'gainsboro' );
 
-  //  renderer.render(scene, camera);
+var camera = new THREE.PerspectiveCamera( 30, innerWidth/innerHeight );
+    camera.position.set( 0, 0, 25 );
+    camera.lookAt( scene.position );
 
-  //  const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-  //  const material = new THREE.MeshBasicMaterial({ color: 0xFF6347, wireframe: true });
-  //  const torus = new THREE.Mesh(geometry, material);
+var renderer = new THREE.WebGLRenderer( {antialias: true} );
+    renderer.setSize( w, h );
+    renderer.setAnimationLoop( animationLoop );
+    div.appendChild( renderer.domElement );
+			
+// window.addEventListener( "resize", (event) => {
+//     camera.aspect = innerWidth/innerHeight;
+//     camera.updateProjectionMatrix( );
+//     renderer.setSize( innerWidth, innerHeight );
+// });
 
-  //  scene.add(torus)
+var controls = new OrbitControls( camera, renderer.domElement );
+    controls.enableDamping = true;
+		controls.autoRotate = true;
 
-  //  function animate() {
-  //     requestAnimationFrame(animate);
-  //     renderer.render(scene, camera)
-  //  }
+var ambientLight = new THREE.AmbientLight( 'white', 0.5 );
+    //scene.add( ambientLight );
+
+var light = new THREE.DirectionalLight( 'white', 3 );
+    light.position.set( 1, 1, 1 );
+    scene.add( light );
+
+
+// next comment
+
+function surface( u, v, target )
+{
+		const n = 10,  // larger values make sharper square
+					t = 1.5; // larger values make more twists
+	
+		u *= 2*Math.PI;
+		v *= 2*Math.PI;
+	
+		var r = (Math.cos(v)**n + Math.sin(v)**n)**(-1/n),
+				x = (4+r*Math.cos(v+t*u)) * Math.cos(u),
+				y = (4+r*Math.cos(v+t*u)) * Math.sin(u),
+				z = r*Math.sin(v+t*u);
+	
+  	target.set( x, y, z );
+}
+
+
+const geometry = new ParametricGeometry(surface, 100, 100);
+
+
+var object = new THREE.Mesh(
+			geometry,
+			new THREE.MeshNormalMaterial(),
+    );	
+		scene.add( object );
+
+
+
+function animationLoop( t )
+{
+   object.rotation.z = t/2700;
+
+    controls.update( );
+		light.position.copy( camera.position );
+    renderer.render( scene, camera );
+}
+
 </script>
+
+```html
+
+<div id="three_container"></div>
+
+<script type="module">
+
+// @author PavelBoytchev
+
+import * as THREE from '/scripts/three/three.module.js';
+import { ParametricGeometry } from '/scripts/three/ParametricGeometry.js';
+import { OrbitControls } from '/scripts/three/OrbitControls.js'
+
+// general setup, boring, skip to the next comment
+
+// Adjust the canvas size 
+const div = document.getElementById (`three_container`)
+const w = div.parentNode.scrollWidth
+const h = w * 9/16
+
+console.clear( );
+
+var scene = new THREE.Scene();
+    scene.background = new THREE.Color( 'gainsboro' );
+
+var camera = new THREE.PerspectiveCamera( 30, innerWidth/innerHeight );
+    camera.position.set( 0, 0, 25 );
+    camera.lookAt( scene.position );
+
+var renderer = new THREE.WebGLRenderer( {antialias: true} );
+    renderer.setSize( w, h );
+    renderer.setAnimationLoop( animationLoop );
+    div.appendChild( renderer.domElement );
+			
+// window.addEventListener( "resize", (event) => {
+//     camera.aspect = innerWidth/innerHeight;
+//     camera.updateProjectionMatrix( );
+//     renderer.setSize( innerWidth, innerHeight );
+// });
+
+var controls = new OrbitControls( camera, renderer.domElement );
+    controls.enableDamping = true;
+		controls.autoRotate = true;
+
+var ambientLight = new THREE.AmbientLight( 'white', 0.5 );
+    //scene.add( ambientLight );
+
+var light = new THREE.DirectionalLight( 'white', 3 );
+    light.position.set( 1, 1, 1 );
+    scene.add( light );
+
+
+// next comment
+
+function surface( u, v, target )
+{
+		const n = 10,  // larger values make sharper square
+					t = 1.5; // larger values make more twists
+	
+		u *= 2*Math.PI;
+		v *= 2*Math.PI;
+	
+		var r = (Math.cos(v)**n + Math.sin(v)**n)**(-1/n),
+				x = (4+r*Math.cos(v+t*u)) * Math.cos(u),
+				y = (4+r*Math.cos(v+t*u)) * Math.sin(u),
+				z = r*Math.sin(v+t*u);
+	
+  	target.set( x, y, z );
+}
+
+
+const geometry = new ParametricGeometry(surface, 100, 100);
+
+
+var object = new THREE.Mesh(
+			geometry,
+			new THREE.MeshNormalMaterial(),
+    );	
+		scene.add( object );
+
+
+
+function animationLoop( t )
+{
+   object.rotation.z = t/2700;
+
+    controls.update( );
+		light.position.copy( camera.position );
+    renderer.render( scene, camera );
+}
+
+</script>
+
+```
 
 <br>
 
 **c2.js**
+
+<script src="/scripts/c2/c2.min.js"></script>
+
+<canvas id="c2"></canvas>
+
+<script>
+
+//Created by Ren Yuan
+
+
+const renderer = new c2.Renderer(document.getElementById('c2'));
+resize();
+
+renderer.background('#cccccc');
+let random = new c2.Random();
+
+
+let world = new c2.World(new c2.Rect(0, 0, renderer.width, renderer.height));
+
+for(let i=0; i<100; i++){
+  let x = random.next(renderer.width);
+  let y = random.next(renderer.height);
+  let p = new c2.Particle(x, y);
+  p.radius = random.next(10, renderer.height/14);
+  p.color = c2.Color.hsl(random.next(0, 30), random.next(30, 60), random.next(20, 100));
+
+  world.addParticle(p);
+}
+
+let quadTree = new c2.QuadTree(new c2.Rect(0,0,renderer.width,renderer.height));
+let collision = new c2.Collision(quadTree);
+//collision.iteration = 2;
+world.addInteractionForce(collision);
+
+let constForce = new c2.ConstForce(0, 1);
+world.addForce(constForce);
+
+
+function drawQuadTree(quadTree){
+    renderer.stroke('#333333');
+    renderer.lineWidth(1);
+    renderer.fill(false);
+    renderer.rect(quadTree.bounds);
+
+    if(quadTree.leaf()) return;
+    for(let i=0; i<4; i++) drawQuadTree(quadTree.children[i]);
+}
+
+
+renderer.draw(() => {
+    renderer.clear();
+
+    drawQuadTree(quadTree);
+
+    world.update();
+
+    for(let i=0; i<world.particles.length; i++){
+      let p = world.particles[i];
+      renderer.stroke('#333333');
+      renderer.lineWidth(1);
+      renderer.fill(p.color);
+      renderer.circle(p.position.x, p.position.y, p.radius);
+      renderer.lineWidth(2);
+      renderer.point(p.position.x, p.position.y);
+    }
+});
+
+
+window.addEventListener('resize', resize);
+function resize() {
+    let parent = renderer.canvas.parentElement;
+    renderer.size(parent.clientWidth, parent.clientWidth / 16 * 9);
+}
+
+</script>
+
+Code from [link](https://github.com/ren-yuan/c2.js/blob/main/examples/ConstForce.js)
+
+```javascript
+
+    //Created by Ren Yuan
+
+
+const renderer = new c2.Renderer(document.getElementById('c2'));
+resize();
+
+renderer.background('#cccccc');
+let random = new c2.Random();
+
+
+let world = new c2.World(new c2.Rect(0, 0, renderer.width, renderer.height));
+
+for(let i=0; i<100; i++){
+  let x = random.next(renderer.width);
+  let y = random.next(renderer.height);
+  let p = new c2.Particle(x, y);
+  p.radius = random.next(10, renderer.height/14);
+  p.color = c2.Color.hsl(random.next(0, 30), random.next(30, 60), random.next(20, 100));
+
+  world.addParticle(p);
+}
+
+let quadTree = new c2.QuadTree(new c2.Rect(0,0,renderer.width,renderer.height));
+let collision = new c2.Collision(quadTree);
+//collision.iteration = 2;
+world.addInteractionForce(collision);
+
+let constForce = new c2.ConstForce(0, 1);
+world.addForce(constForce);
+
+
+function drawQuadTree(quadTree){
+    renderer.stroke('#333333');
+    renderer.lineWidth(1);
+    renderer.fill(false);
+    renderer.rect(quadTree.bounds);
+
+    if(quadTree.leaf()) return;
+    for(let i=0; i<4; i++) drawQuadTree(quadTree.children[i]);
+}
+
+
+renderer.draw(() => {
+    renderer.clear();
+
+    drawQuadTree(quadTree);
+
+    world.update();
+
+    for(let i=0; i<world.particles.length; i++){
+      let p = world.particles[i];
+      renderer.stroke('#333333');
+      renderer.lineWidth(1);
+      renderer.fill(p.color);
+      renderer.circle(p.position.x, p.position.y, p.radius);
+      renderer.lineWidth(2);
+      renderer.point(p.position.x, p.position.y);
+    }
+});
+
+
+window.addEventListener('resize', resize);
+function resize() {
+    let parent = renderer.canvas.parentElement;
+    renderer.size(parent.clientWidth, parent.clientWidth / 16 * 9);
+}
+
+```
 
